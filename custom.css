@@ -32,8 +32,6 @@ a:focus {
     border-color: #8266a8;
     border: 0px;
     margin-bottom: 0px;
-    padding-left: 100px;
-    padding-right: 100px;
     transition: .5s ease;
 }
 
