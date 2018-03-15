@@ -201,7 +201,7 @@ p {
   <div class="row">
     <div class="col-lg-1">
     </div>
-<nav class="navbar navbar-default col-lg-10">
+<nav id="navbar" class="navbar navbar-default col-lg-10">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -237,7 +237,7 @@ p {
 </div>
 
 <div id="main-container" class="container-fluid">
- <div class="row hidden-xs hidden-sm">
+ <div id="carousel_row" class="row hidden-xs hidden-sm">
    <div class="col-xs-12" style="padding:0;">
      <div id="myCarousel" class="carousel slide" data-ride="carousel">
      <!-- Indicators -->
@@ -321,18 +321,13 @@ p {
        <span class="sr-only">Next</span>
      </a>
    </div>
-     <div class="main-text hidden-xs">
-                 <div class="col-lg-1">
-                 </div>
-                   <div class="col-lg-11">
-                     <div class="background">
-                       <h2>Meditaties</h2>
-                       <h4>
-                           Installation view at Arttilia Gallery 2018
-                       </h4>
-                     </div>
-                   </div>
-               </div>
+   <div class="text-block">
+     <h3>Meditaties</h3>
+     <h5>
+         Installation view at Arttilia Gallery 2018
+     </h5>
+     <button id="scroll_button" class="btn btn-default">View all images</button>
+</div>
    </div>
 </div>
 
@@ -347,9 +342,9 @@ p {
  </div></a>
   </div>
 </div>
- <div class="row hidden-md hidden-lg">
-   <div class="mobile_front_col col-xs-6">
-     <a data-fancybox="gallery" href="img/arttilia/mobile/2.JPG"><img alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/2.JPG"></a>
+ <div id="section2" class="row">
+   <div class="mobile_front_col col-xs-6 hidden-lg hidden-md">
+     <a class="link_gallery" data-fancybox="gallery" href="img/arttilia/mobile/2.JPG"><img alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/2.JPG"></a>
 
      <a data-fancybox="gallery" href="img/arttilia/mobile/4.JPG"><img alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/4.JPG"></a>
 
@@ -361,7 +356,7 @@ p {
 
            <a data-fancybox="gallery" href="img/arttilia/mobile/12.JPG"><img
              alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/12.JPG"></a>
-
+               <!--5-->
              <a data-fancybox="gallery" href="img/arttilia/mobile/14.JPG"><img
                alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/14.JPG"></a>
 
@@ -374,7 +369,7 @@ p {
                    <a data-fancybox="gallery" href="img/arttilia/mobile/20.JPG"><img
                      alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/20.JPG"></a>
    </div>
-   <div class="mobile_second_col col-xs-6">
+   <div class="mobile_second_col col-xs-6 hidden-lg hidden-md">
      <a data-fancybox="gallery" href="img/arttilia/mobile/3.JPG"><img
        alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/3.JPG"></a>
 
@@ -389,7 +384,7 @@ p {
 
              <a data-fancybox="gallery" href="img/arttilia/mobile/11.JPG"><img
                alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/11.JPG"></a>
-
+<!--5-->
                <a data-fancybox="gallery" href="img/arttilia/mobile/13.JPG"><img
                  alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/13.JPG"></a>
 
@@ -402,15 +397,108 @@ p {
                      <a data-fancybox="gallery" href="img/arttilia/mobile/19.JPG"><img
                        alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/19.JPG"></a>
    </div>
+
+   <div  class="wide_col col-md-3">
+     <a class="link_gallery" data-fancybox="gallery" href="img/arttilia/mobile/2.JPG"><img alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/2.JPG"></a>
+
+     <a data-fancybox="gallery" href="img/arttilia/mobile/4.JPG"><img alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/4.JPG"></a>
+
+     <a data-fancybox="gallery" href="img/arttilia/mobile/6.JPG"><img
+       alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/6.JPG"></a>
+
+         <a data-fancybox="gallery" href="img/arttilia/mobile/10.JPG"><img
+           alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/10.JPG"></a>
+
+           <a data-fancybox="gallery" href="img/arttilia/mobile/12.JPG"><img
+             alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/12.JPG"></a>
+   </div>
+   <div class="wide_col col-md-3">
+     <a data-fancybox="gallery" href="img/arttilia/mobile/3.JPG"><img
+       alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/3.JPG"></a>
+
+       <a data-fancybox="gallery" href="img/arttilia/mobile/5.JPG"><img
+         alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/5.JPG"></a>
+
+       <a data-fancybox="gallery" href="img/arttilia/mobile/7.JPG"><img
+           alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/7.JPG"></a>
+
+           <a data-fancybox="gallery" href="img/arttilia/mobile/9.JPG"><img
+             alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/9.JPG"></a>
+
+             <a data-fancybox="gallery" href="img/arttilia/mobile/11.JPG"><img
+               alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/11.JPG"></a>
+   </div>
+   <div  class="wide_col col-md-3">
+     <a data-fancybox="gallery" href="img/arttilia/mobile/14.JPG"><img
+       alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/14.JPG"></a>
+
+       <a data-fancybox="gallery" href="img/arttilia/mobile/16.JPG"><img
+         alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/16.JPG"></a>
+
+         <a data-fancybox="gallery" href="img/arttilia/mobile/18.JPG"><img
+           alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/18.JPG"></a>
+
+           <a data-fancybox="gallery" href="img/arttilia/mobile/20.JPG"><img
+             alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/20.JPG"></a>
+   </div>
+   <div  class="col-md-3">
+     <a data-fancybox="gallery" href="img/arttilia/mobile/13.JPG"><img
+       alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/13.JPG"></a>
+
+       <a data-fancybox="gallery" href="img/arttilia/mobile/15.JPG"><img
+         alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/15.JPG"></a>
+
+         <a data-fancybox="gallery" href="img/arttilia/mobile/17.JPG"><img
+           alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/17.JPG"></a>
+
+           <a data-fancybox="gallery" href="img/arttilia/mobile/19.JPG"><img
+             alt="Zazah G. Van den Broeck Arttilia" class="mobile_gallery_img img-responsive" src="img/arttilia/mobile/thumb/19.JPG"></a>
+   </div>
+
  </div>
 </div>
 <script>
+$(".fancybox").fancybox({
+           helpers: {
+               overlay: {
+                   locked: false
+               }
+           }
+       });
+
 $("[data-fancybox]").fancybox({
   buttons : [
-
         'close'
     ]
 });
+
+
+
+var navbar = document.getElementById('navbar');
+var positionInfo = navbar.getBoundingClientRect();
+var height_nav = positionInfo.height;
+
+$(document).ready(function(){
+ $("#scroll_button").click(function(){
+   $('html, body').animate({
+     scrollTop: $("#section2").offset().top - (height_nav - 1) * 2}
+     , 500);
+   });
+
+   $(window).scroll(function () {
+   //if you hard code, then use console
+   //.log to determine when you want the
+   //nav bar to stick.
+   console.log($(window).scrollTop())
+   if ($(window).scrollTop() > 50) {
+   $('#navbar').addClass('navbar-fixed');
+   }
+   if ($(window).scrollTop() < 50) {
+   $('#navbar').removeClass('navbar-fixed');
+   }
+   });
+ });
+
 </script>
 
 
