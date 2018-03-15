@@ -123,6 +123,7 @@ a:focus {
 
 .wide_col {
   padding: 2.5px;
+  padding-top: 0px;
 }
 
 .mobile_gallery_img:hover {
