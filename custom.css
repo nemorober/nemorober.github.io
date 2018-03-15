@@ -32,6 +32,9 @@ a:focus {
     border-color: #8266a8;
     border: 0px;
     margin-bottom: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: .5s ease;
 }
 
 
@@ -39,8 +42,10 @@ a:focus {
 .navbar-fixed {
     top: 0;
     z-index: 100;
-  position: fixed;
+    position: fixed;
     width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
     opacity: 0.6;
     transition: .3s ease;
 }
